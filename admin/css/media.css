@@ -1,0 +1,57 @@
+@media only screen and (max-width: 992px) {
+
+	#page-container,
+	#header .header-left {
+		padding-left: 80px;
+	}
+
+	#toggle-left-menu,
+	.big-logo {
+		display: none;
+	}
+
+	#toggle-left-menu,
+	.small-logo {
+		display: block;
+	}
+
+	#header .header-left h3 {
+		display: none;
+	}
+
+	#header .header-left a {
+		display: inline;
+		margin-top: -48px;
+		font-size: 15px;
+	}
+	#header .header-left a .signout{
+		font-size: 15px;
+	}
+
+
+
+}
+
+@media only screen and (min-width: 992px) {
+	#left-menu li.has-sub::after {
+		font-family: "Ionicons";
+		content: "\27A4";
+		position: absolute;
+		top: 2px;
+		right: 10px;
+		cursor: pointer;
+		transform: rotate(0deg);
+		-webkit-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	}
+
+	#left-menu li.has-sub.rotate:after {
+		-webkit-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		transform: rotate(90deg);
+	}
+	
+
+}
